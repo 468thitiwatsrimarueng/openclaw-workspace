@@ -1,0 +1,296 @@
+{
+  "agent:main:telegram:direct:6449570403": {
+    "origin": {
+      "label": "nantawat moonkom id:6449570403",
+      "provider": "telegram",
+      "surface": "telegram",
+      "chatType": "direct",
+      "from": "telegram:6449570403",
+      "to": "telegram:6449570403",
+      "accountId": "default"
+    },
+    "sessionId": "4af98c89-17a2-4ec2-979f-64ec93013d6c",
+    "updatedAt": 1773650005580,
+    "deliveryContext": {
+      "channel": "telegram",
+      "to": "telegram:6449570403",
+      "accountId": "default"
+    },
+    "lastChannel": "telegram",
+    "lastTo": "telegram:6449570403",
+    "lastAccountId": "default",
+    "systemSent": true,
+    "abortedLastRun": false,
+    "chatType": "direct",
+    "sessionFile": "/Users/foto/.openclaw/agents/main/sessions/4af98c89-17a2-4ec2-979f-64ec93013d6c.jsonl",
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>discord</name>\n    <description>Discord ops via the message tool (channel=discord).</description>\n    <location>~/.nvm/versions/node/v22.22.1/lib/node_modules/openclaw/skills/discord/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/.nvm/versions/node/v22.22.1/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>~/.nvm/versions/node/v22.22.1/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>~/.nvm/versions/node/v22.22.1/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "discord",
+          "requiredEnv": []
+        },
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "weather",
+          "requiredEnv": []
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "discord",
+          "description": "Discord ops via the message tool (channel=discord).",
+          "filePath": "/Users/foto/.nvm/versions/node/v22.22.1/lib/node_modules/openclaw/skills/discord/SKILL.md",
+          "baseDir": "/Users/foto/.nvm/versions/node/v22.22.1/lib/node_modules/openclaw/skills/discord",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "/Users/foto/.nvm/versions/node/v22.22.1/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/Users/foto/.nvm/versions/node/v22.22.1/lib/node_modules/openclaw/skills/healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like \"create a skill\", \"author a skill\", \"tidy up a skill\", \"improve this skill\", \"review the skill\", \"clean up the skill\", \"audit the skill\".",
+          "filePath": "/Users/foto/.nvm/versions/node/v22.22.1/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/foto/.nvm/versions/node/v22.22.1/lib/node_modules/openclaw/skills/skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
+          "filePath": "/Users/foto/.nvm/versions/node/v22.22.1/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/foto/.nvm/versions/node/v22.22.1/lib/node_modules/openclaw/skills/weather",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "authProfileOverride": "vllm:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0,
+    "modelProvider": "vllm",
+    "model": "ptm-oss-120b",
+    "contextTokens": 100000,
+    "systemPromptReport": {
+      "source": "run",
+      "generatedAt": 1773650000527,
+      "sessionId": "4af98c89-17a2-4ec2-979f-64ec93013d6c",
+      "sessionKey": "agent:main:telegram:direct:6449570403",
+      "provider": "vllm",
+      "model": "ptm-oss-120b",
+      "workspaceDir": "/Users/foto/.openclaw/workspace",
+      "bootstrapMaxChars": 20000,
+      "bootstrapTotalMaxChars": 150000,
+      "bootstrapTruncation": {
+        "warningMode": "once",
+        "warningShown": false,
+        "truncatedFiles": 0,
+        "nearLimitFiles": 0,
+        "totalNearLimit": false
+      },
+      "sandbox": {
+        "mode": "off",
+        "sandboxed": false
+      },
+      "systemPrompt": {
+        "chars": 25642,
+        "projectContextChars": 13286,
+        "nonProjectContextChars": 12356
+      },
+      "injectedWorkspaceFiles": [
+        {
+          "name": "AGENTS.md",
+          "path": "/Users/foto/.openclaw/workspace/AGENTS.md",
+          "missing": false,
+          "rawChars": 7809,
+          "injectedChars": 7809,
+          "truncated": false
+        },
+        {
+          "name": "SOUL.md",
+          "path": "/Users/foto/.openclaw/workspace/SOUL.md",
+          "missing": false,
+          "rawChars": 1664,
+          "injectedChars": 1664,
+          "truncated": false
+        },
+        {
+          "name": "TOOLS.md",
+          "path": "/Users/foto/.openclaw/workspace/TOOLS.md",
+          "missing": false,
+          "rawChars": 850,
+          "injectedChars": 850,
+          "truncated": false
+        },
+        {
+          "name": "IDENTITY.md",
+          "path": "/Users/foto/.openclaw/workspace/IDENTITY.md",
+          "missing": false,
+          "rawChars": 325,
+          "injectedChars": 325,
+          "truncated": false
+        },
+        {
+          "name": "USER.md",
+          "path": "/Users/foto/.openclaw/workspace/USER.md",
+          "missing": false,
+          "rawChars": 474,
+          "injectedChars": 474,
+          "truncated": false
+        },
+        {
+          "name": "HEARTBEAT.md",
+          "path": "/Users/foto/.openclaw/workspace/HEARTBEAT.md",
+          "missing": false,
+          "rawChars": 167,
+          "injectedChars": 167,
+          "truncated": false
+        },
+        {
+          "name": "BOOTSTRAP.md",
+          "path": "/Users/foto/.openclaw/workspace/BOOTSTRAP.md",
+          "missing": false,
+          "rawChars": 1449,
+          "injectedChars": 1449,
+          "truncated": false
+        }
+      ],
+      "skills": {
+        "promptChars": 2323,
+        "entries": [
+          {
+            "name": "discord",
+            "blockChars": 231
+          },
+          {
+            "name": "healthcheck",
+            "blockChars": 507
+          },
+          {
+            "name": "skill-creator",
+            "blockChars": 775
+          },
+          {
+            "name": "weather",
+            "blockChars": 432
+          }
+        ]
+      },
+      "tools": {
+        "listChars": 1602,
+        "schemaChars": 7233,
+        "entries": [
+          {
+            "name": "read",
+            "summaryChars": 298,
+            "schemaChars": 392,
+            "propertiesCount": 4
+          },
+          {
+            "name": "edit",
+            "summaryChars": 129,
+            "schemaChars": 591,
+            "propertiesCount": 6
+          },
+          {
+            "name": "write",
+            "summaryChars": 127,
+            "schemaChars": 313,
+            "propertiesCount": 3
+          },
+          {
+            "name": "exec",
+            "summaryChars": 181,
+            "schemaChars": 1086,
+            "propertiesCount": 12
+          },
+          {
+            "name": "process",
+            "summaryChars": 85,
+            "schemaChars": 961,
+            "propertiesCount": 12
+          },
+          {
+            "name": "sessions_list",
+            "summaryChars": 54,
+            "schemaChars": 212,
+            "propertiesCount": 4
+          },
+          {
+            "name": "sessions_history",
+            "summaryChars": 36,
+            "schemaChars": 161,
+            "propertiesCount": 3
+          },
+          {
+            "name": "sessions_send",
+            "summaryChars": 84,
+            "schemaChars": 273,
+            "propertiesCount": 5
+          },
+          {
+            "name": "sessions_yield",
+            "summaryChars": 97,
+            "schemaChars": 60,
+            "propertiesCount": 1
+          },
+          {
+            "name": "sessions_spawn",
+            "summaryChars": 198,
+            "schemaChars": 1179,
+            "propertiesCount": 17
+          },
+          {
+            "name": "subagents",
+            "summaryChars": 105,
+            "schemaChars": 191,
+            "propertiesCount": 4
+          },
+          {
+            "name": "session_status",
+            "summaryChars": 207,
+            "schemaChars": 89,
+            "propertiesCount": 2
+          },
+          {
+            "name": "web_search",
+            "summaryChars": 175,
+            "schemaChars": 1084,
+            "propertiesCount": 9
+          },
+          {
+            "name": "web_fetch",
+            "summaryChars": 129,
+            "schemaChars": 374,
+            "propertiesCount": 3
+          },
+          {
+            "name": "memory_search",
+            "summaryChars": 334,
+            "schemaChars": 139,
+            "propertiesCount": 3
+          },
+          {
+            "name": "memory_get",
+            "summaryChars": 151,
+            "schemaChars": 128,
+            "propertiesCount": 3
+          }
+        ]
+      }
+    },
+    "totalTokensFresh": false
+  }
+}
